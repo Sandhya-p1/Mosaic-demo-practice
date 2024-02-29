@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile {
+  @apply rounded-full h-12 w-12;
+}
+
+.chevronicon {
+  @apply h-5 text-gray-400 cursor-pointer;
+}
+
+.fronticon {
+  @apply size-10 text-slate-500 fill-slate-600;
+}
+.navlist {
+  @apply h-9 w-9 p-2 bg-gray-100 rounded-full;
+}
+.hovereffect {
+  @apply transition transform duration-150 ease-in-out;
+}
+.box {
+  @apply shadow-lg  border bg-white  border-slate-200;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.starorange {
+  @apply h-5 w-5 fill-orange-400 text-orange-400 font-normal;
+}
+.stargray {
+  @apply h-5 w-5 fill-gray-300 text-gray-300;
+}
+.inputbox {
+  @apply p-2 border border-gray-200 bg-white shadow-sm hover:border-slate-300 outline-none rounded-md placeholder:text-gray-500 w-full;
+}
+.profile-name {
+  @apply flex space-x-2 items-center cursor-pointer p-3;
+}
+.menulist {
+  @apply flex text-slate-500 items-center gap-x-2  font-medium p-2;
+}
+.icon {
+  @apply h-4 w-4 text-slate-400;
+}
+.btn {
+  @apply px-3 py-2 rounded-md text-center border border-gray-200 bg-white font-medium;
+}
