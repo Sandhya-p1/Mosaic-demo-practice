@@ -13,8 +13,14 @@ import {
   ArrowLeft,
   ArrowRight,
 } from "lucide-react";
+import { useRouter } from "next/router";
 
 function forum() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/forumpost");
+  };
+
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
@@ -95,7 +101,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   Share Your Startup - December 2021 - Upvote This For Maximum
                   Visibility! <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -123,7 +132,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   Failed for the past 12 years as a tech entrepreneur. My key
                   takeaways.
                   <br />
@@ -146,7 +158,10 @@ function forum() {
               </div>
             </div>
             {/* box4 */}
-            <div className="box px-4 py-6 flex justify-between items-center space-x-1">
+            <div
+              className="box px-4 py-6 flex justify-between items-center space-x-1 cursor-pointer"
+              onClick={handleClick}
+            >
               <div className="flex gap-x-3">
                 <img
                   src="https://logodix.com/logo/1255376.png"
@@ -178,7 +193,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   I built and sold 2 small SaaS products and quit my job in the
                   last two years — AMA. <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -206,7 +224,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   Had a full-time job, bootstrapped a side project to 7 digit
                   ARR, now building another side project—AMA <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -234,7 +255,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   💸 Trade crypto, fiat, and stablecoins with Crypto.io. Low
                   fees and incredible performance! <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -254,7 +278,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   Which are the main channels you use to drive traffic to your
                   website? 📈 <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -282,7 +309,10 @@ function forum() {
                   src="https://logodix.com/logo/1255376.png"
                   className="h-12 w-10 object-cover"
                 />
-                <h1 className="text-black font-medium text-xl space-y-2">
+                <h1
+                  className="text-black font-medium text-xl space-y-2 cursor-pointer"
+                  onClick={handleClick}
+                >
                   How to build a following on Twitter as a founder - A guide to
                   growing your audience 🚀 <br />
                   <span className="text-base text-gray-400 flex items-center font-normal">
@@ -304,7 +334,10 @@ function forum() {
               </div>
             </div>
             {/* box10 */}
-            <div className="box px-4 py-6 flex justify-between items-center space-x-1">
+            <div
+              className="box px-4 py-6 flex justify-between items-center space-x-1 cursor-pointer"
+              onClick={handleClick}
+            >
               <div className="flex gap-x-3">
                 <img
                   src="https://logodix.com/logo/1255376.png"

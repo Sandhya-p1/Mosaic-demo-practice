@@ -15,15 +15,19 @@ import {
   ArrowUp,
   Navigation2,
 } from "lucide-react";
-
+import { useRouter } from "next/router";
 function forumpost() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/forum");
+  };
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-y-auto ">
         <Nav />
         {/* hero page */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5 py-6 md:px-7 text-gray-600">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5 py-6  md:px-7 h-full text-gray-600">
           {/* left side part */}
           <div className="space-y-6 ">
             <div className=" flex justify-between items-center ">
@@ -83,11 +87,13 @@ function forumpost() {
 
           {/* MIDDLE PART */}
 
-          <div className="col-span-2 overflow-y-scroll box no-scrollbar space-y-4  mt-3 md:mt-0 p-5">
-            <div className="text-gray-600 flex items-center space-x-2 text-base">
-              <h1>Home</h1>
+          <div className="col-span-2 overflow-y-auto box no-scrollbar space-y-4  mt-3 md:mt-0 p-5">
+            <div className="text-gray-600 flex items-center space-x-2 text-base cursor-pointer">
+              <h1 className="hover:text-indigo-600" onClick={handleClick}>
+                Home
+              </h1>
               <ChevronRightIcon className="h-4 w-4 text-gray-400" />
-              <h1>Discussion</h1>
+              <h1 className="hover:text-indigo-600">Discussion</h1>
             </div>
             <div className="flex justify-between items-center ">
               <h1 className="text-2xl text-black font-bold">
@@ -313,7 +319,7 @@ function forumpost() {
             </p>
           </div>
           {/* right part */}
-          <div className="pl-6 hidden md:inline space-y-5">
+          <div className="pl-6 hidden md:inline space-y-5 overflow-y-auto no-scrollbar">
             <button className="py-2 text-center w-full bg-indigo-500 hover:bg-indigo-600 text-white text-base font-medium rounded-md">
               Create Post
             </button>

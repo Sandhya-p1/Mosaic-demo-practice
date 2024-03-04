@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .profile {
-  @apply rounded-full h-12 w-12;
+  @apply rounded-full h-12 w-12 object-cover;
 }
 
 .chevronicon {
@@ -46,4 +46,11 @@
 }
 .btn {
   @apply px-3 py-2 rounded-md text-center border border-gray-200 bg-white font-medium;
+}
+
+.optionmenu {
+  @apply bg-white rounded-2xl px-3 py-1 font-medium text-sm text-gray-400  shadow-md hover:border-gray-300 border text-center;
+}
+.footerbtn {
+  @apply px-3 py-2  text-center border border-gray-200 bg-white font-medium;
 }
