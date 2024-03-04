@@ -120,7 +120,7 @@ export const Menus = [
       },
       {
         title: "Forum-Post",
-        path: "/forum-post",
+        path: "/forumpost",
       },
       {
         title: "Meetups",
