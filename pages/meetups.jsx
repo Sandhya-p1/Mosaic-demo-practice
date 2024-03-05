@@ -9,7 +9,13 @@ import {
   Search,
   Video,
 } from "lucide-react";
+import { useRouter } from "next/router";
+
 function meetups() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("./meetupspost");
+  };
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
@@ -65,7 +71,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
@@ -111,7 +120,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
@@ -157,7 +169,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
@@ -203,7 +218,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
@@ -249,7 +267,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
@@ -295,7 +316,10 @@ function meetups() {
                 <h1 className="uppercase text-indigo-500 font-semibold text-sm">
                   mon 27 dec, 2021
                 </h1>
-                <h2 className="text-black text-xl font-semibold">
+                <h2
+                  className="text-black text-xl font-semibold cursor-pointer"
+                  onClick={handleClick}
+                >
                   Silicon Valley Bootstrapper Breakfast Online for 2021
                 </h2>
                 <p className="text-base">
