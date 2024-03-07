@@ -39,7 +39,7 @@
   @apply flex space-x-2 items-center cursor-pointer p-3;
 }
 .menulist {
-  @apply flex text-slate-500 items-center gap-x-2  font-medium p-2;
+  @apply flex text-slate-500 items-center gap-x-2  font-medium;
 }
 .icon {
   @apply h-4 w-4 text-slate-400;
@@ -49,7 +49,7 @@
 }
 
 .optionmenu {
-  @apply bg-white rounded-2xl px-3 py-1 font-medium text-sm text-gray-400  shadow-md hover:border-gray-300 border text-center;
+  @apply bg-white rounded-2xl px-3 py-1 font-medium text-sm text-gray-500  shadow-sm hover:border-gray-300 border text-center;
 }
 .footerbtn {
   @apply px-3 py-2  text-center border border-gray-200 bg-white font-medium;
