@@ -12,10 +12,17 @@ import React from "react";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
 import { useState } from "react";
+
+import { useRouter } from "next/router";
+
 function listing() {
   const [isOpen, setIsOpen] = useState(false);
   const handleCLick = () => {
     setIsOpen(!isOpen);
+  };
+  const router = useRouter();
+  const handleRouter = () => {
+    router.push("./jobpost");
   };
 
   return (
@@ -179,9 +186,12 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg cursor-pointer "
+                      onClick={handleRouter}
+                    >
                       Senior Web App Designer <br />
-                      <span className="text-gray-500 text-base font-normal">
+                      <span className="text-gray-500 text-base font-normal  cursor-text">
                         Contract / Remote / New York, NYC
                       </span>
                     </h1>
@@ -201,9 +211,12 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg cursor-pointer "
+                      onClick={handleRouter}
+                    >
                       Senior Full Stack Engineer <br />
-                      <span className="text-gray-500 text-base font-normal">
+                      <span className="text-gray-500 text-base font-normal cursor-text">
                         Contract / Remote / New York, NYC
                       </span>
                     </h1>
@@ -223,7 +236,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       Ruby on Rails Engineer <br />
                       <span className="text-gray-500 text-base font-normal">
                         Contract / Remote / New York, NYC
@@ -245,7 +261,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       Senior Software Engineer Backend <br />
                       <span className="text-gray-500 text-base font-normal">
                         Full-time / Remote / Anywhere
@@ -267,7 +286,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       React.js Software Developer <br />
                       <span className="text-gray-500 text-base font-normal">
                         Full-time / Remote / London, Uk
@@ -289,7 +311,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       Senior Full Stack Rails Developer <br />
                       <span className="text-gray-500 text-base font-normal">
                         Part-time / Remote / Milan, IT
@@ -333,7 +358,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       Contract React Native Engineer <br />
                       <span className="text-gray-500 text-base font-normal">
                         Contract / Remote / Milami,FL
@@ -355,7 +383,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       Senior Client Engineer (React & React Native) <br />
                       <span className="text-gray-500 text-base font-normal">
                         Full-time / Remote / Lincoln,NE
@@ -377,7 +408,10 @@ function listing() {
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7TcKtQGH9nj__y8iYu0zosMR-08BYx-qQtaccd7uW4gv7Z323A9P7dEADBi9RcTNo4hY&usqp=CAU"
                       className="profile"
                     />
-                    <h1 className="text-black   font-medium text-lg ">
+                    <h1
+                      className="text-black   font-medium text-lg "
+                      onClick={handleRouter}
+                    >
                       QA Automation Engineer <br />
                       <span className="text-gray-500 text-base font-normal">
                         Contract / Remote / Anywhere

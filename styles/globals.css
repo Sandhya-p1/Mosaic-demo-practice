@@ -54,3 +54,6 @@
 .footerbtn {
   @apply px-3 py-2  text-center border border-gray-200 bg-white font-medium;
 }
+.iconhover {
+  @apply hover:text-indigo-500 hover:fill-indigo-500 cursor-pointer;
+}
