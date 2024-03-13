@@ -183,11 +183,11 @@ export const Menus = [
     subMenus: [
       {
         title: "Kanban",
-        icon: "/kanban",
+        path: "/kanban",
       },
       {
         title: "List",
-        icon: "/list",
+        path: "/list",
       },
     ],
   },
