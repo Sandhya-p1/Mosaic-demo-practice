@@ -59,8 +59,15 @@
 }
 
 .blueicon {
-  @apply h-4 w-4 text-indigo-500;
+  @apply h-6 w-6 text-indigo-500;
 }
 .iconflex {
-  @apply flex items-center space-x-1;
+  @apply flex items-center gap-x-1;
+}
+
+.profilebox {
+  @apply h-8 w-8 rounded-full;
+}
+.boxheading {
+  @apply text-black font-semibold;
 }
