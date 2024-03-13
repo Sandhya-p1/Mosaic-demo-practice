@@ -14,6 +14,7 @@ import Nav from "./components/Nav";
 import { useState } from "react";
 
 import { useRouter } from "next/router";
+import ToggleSwitcher from "./components/ToggleSwitcher";
 
 function listing() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,15 +86,13 @@ function listing() {
                     <label className="px-2 ">Customer Support</label>
                   </div>
                   <div>
-                    <input
-                      type="checkbox"
-                      class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
-                    />
+                    <input type="checkbox" />
                     <label className="px-2 ">Sales / Marketing</label>
                   </div>
                 </div>
                 {/* company culture */}
                 <h1 className="text-black font-medium">Company Culture</h1>
+                <ToggleSwitcher />
                 <div className="space-y-2">
                   <p className="italic">
                     Only show companies that are creating a positive culture
@@ -140,7 +139,7 @@ function listing() {
                 </div>
                 {/* immigration */}
                 <h1 className="text-black font-medium">Immigration</h1>
-                {/* toggle button  remaining */}
+                <ToggleSwitcher />{" "}
                 <div className="space-y-2">
                   <p className="italic">
                     Only show companies that can sponsor a visa

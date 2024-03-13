@@ -56,9 +56,10 @@ function HomePage() {
             <div className=" flex space-x-4 text-center py-5 md:py-0 text-gray-500 ">
               <ListFilter className="h-10 p-1 bg-white border rounded-sm hover:border-gray-300 " />
               {/* datepicker is remaining here */}
-              <div>
+              {/* <div>
                 <DateRangePicker ranges={[selectionRange]} />
-              </div>
+              </div> */}
+              <input type="date" className=" text-black" />
               <button className="flex items-center  bg-indigo-500 hover:bg-indigo-700 rounded-lg px-3 py-2 ">
                 <Plus className="h-5 text-indigo-400" />
                 <p className="text-white ml-1 font-medium">Add View</p>

@@ -57,3 +57,10 @@
 .iconhover {
   @apply hover:text-indigo-500 hover:fill-indigo-500 cursor-pointer;
 }
+
+.blueicon {
+  @apply h-4 w-4 text-indigo-500;
+}
+.iconflex {
+  @apply flex items-center space-x-1;
+}

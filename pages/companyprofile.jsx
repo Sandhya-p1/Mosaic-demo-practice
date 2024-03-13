@@ -3,13 +3,19 @@ import Sidebar from "./components/Sidebar";
 
 import Nav from "./components/Nav";
 import { Link, MapPin, Bookmark } from "lucide-react";
+import { useRouter } from "next/router";
 
 function companyprofile() {
+  const router = useRouter();
+  const handleRouter = () => {
+    router.push("./jobpost");
+  };
   return (
     <main className="flex h-screen bg-slate-100 ">
       <Sidebar />
       <div className="w-full  overflow-auto ">
         <Nav />
+
         <div className="space-y-5 text-gray-600">
           {/* top part */}
           <div className="space-y-6 bg-white  border-b border-gray-200 shadow-sm overflow-scroll no-scrollbar scroll-smooth">
@@ -58,7 +64,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black   font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       Senior Software Engineer Backend <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -83,7 +89,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black cursor-pointer  font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       React.js Software Developer <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -108,7 +114,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black   font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       Contract React Native Engineer <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -136,7 +142,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black   font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       Senior Software Engineer Backend <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -161,7 +167,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black cursor-pointer  font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       React.js Software Developer <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -191,7 +197,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black   font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       Senior Software Engineer Backend <br />
                       <span className="text-gray-500 text-base font-normal">
@@ -216,7 +222,7 @@ function companyprofile() {
                     />
                     <h1
                       className="text-black cursor-pointer  font-medium text-lg "
-                      // onClick={handleRouter}
+                      onClick={handleRouter}
                     >
                       React.js Software Developer <br />
                       <span className="text-gray-500 text-base font-normal">
