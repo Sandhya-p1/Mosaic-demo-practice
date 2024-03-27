@@ -285,11 +285,13 @@ export const Menus = [
       },
     ],
   },
+
   {
     title: "Authentication",
     icon: <ArrowRightCircle />,
     iconClosed: <ChevronDown />,
     iconOpened: <ChevronUp />,
+    spacing: true,
 
     subMenus: [
       {
