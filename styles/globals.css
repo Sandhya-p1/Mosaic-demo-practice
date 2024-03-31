@@ -74,3 +74,6 @@
 .iconbox {
   @apply h-7 w-7 p-1 rounded-md bg-white border hover:border-slate-300;
 }
+.calendarbtn {
+  @apply p-1 flex items-center bg-white border shadow-sm rounded-md size-fit space-x-2;
+}
