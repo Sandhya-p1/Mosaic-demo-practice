@@ -21,11 +21,11 @@ import { Menus } from "./SidebarData";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
-function Sidebar() {
+function Sidebar(showSidebar) {
   const [openSubmenus, setOpenSubMenus] = useState(false);
 
   return (
-    <div className="h-screen overflow-scroll no-scrollbar scroll-smooth  md:w-72 w-0 bg-slate-800 px-6 py-4 space-y-12">
+    <div className=" h-full  hidden lg:inline-block overflow-scroll no-scrollbar scroll-smooth  md:w-72  bg-slate-800 px-6 py-4 space-y-12">
       <img
         src="https://i.pinimg.com/originals/7a/b5/b2/7ab5b2fcae9fe6153eb9797b1b1435b7.png"
         className="h-10 w-10 rounded-full"
@@ -67,7 +67,10 @@ function Sidebar() {
                   <ul>
                     {menu.subMenus.map((submenuItems, index) => (
                       <Link href={`/${submenuItems.path}`}>
-                        <li key={index} className="px-8 text-sm mt-2 ">
+                        <li
+                          key={index}
+                          className="px-8 text-white text-sm mt-2 "
+                        >
                           {submenuItems.title}
                         </li>
                       </Link>

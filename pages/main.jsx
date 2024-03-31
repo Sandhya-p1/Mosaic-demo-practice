@@ -1,27 +1,30 @@
 import React, { useState } from "react";
 import Footer from "./components/Footer";
-// import { DateRangePicker } from "rsuite";
-// import "rsuite/dist/styles/rsuite-default.css";
-import "@wojtekmaj/react-daterange-picker/dist/DateRangePicker.css";
-import DateRangePicker from "@wojtekmaj/react-daterange-picker";
+
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
+import { DateRangePicker } from "rsuite";
+import subDays from "date-fns/subDays";
 
 import { Plus, ListFilter, PlusIcon } from "lucide-react";
 function HomePage() {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
-  const selectionRange = {
-    startDate,
-    endDate,
-    key: "Selection",
-  };
+  const ranges = [
+    {
+      label: "today",
+      value: [new Date(), new Date()],
+    },
+    {
+      label: "yesterday",
+      value: [subDays(new Date(), 1), subDays(new Date(), 1)],
+    },
+  ];
+
   return (
     <main className="flex h-screen bg-gray-100 ">
       <Sidebar />
       <div className="w-full overflow-auto  ">
         <Nav />
-        <div className="px-5 py-6 bg-gray-100">
+        <div className="px-5 py-32 bg-gray-100 ">
           <div className="bg-indigo-200 px-5 py-3 rounded-sm ">
             <h1 className=" text-black text-3xl font-bold">
               Good afternoon, Acme Inc.
@@ -53,13 +56,16 @@ function HomePage() {
             </div>
             {/* date and add file-right */}
 
-            <div className=" flex space-x-4 text-center py-5 md:py-0 text-gray-500 ">
-              <ListFilter className="h-10 p-1 bg-white border rounded-sm hover:border-gray-300 " />
-              {/* datepicker is remaining here */}
-              {/* <div>
-                <DateRangePicker ranges={[selectionRange]} />
-              </div> */}
-              <input type="date" className=" text-black" />
+            <div className=" flex space-x-4 items-center py-5 md:py-0 text-gray-500 ">
+              <ListFilter className="h-9 w-9 cursor-pointer p-1 bg-white border rounded-sm hover:border-gray-300 " />
+              <DateRangePicker
+                oneTap
+                showOneCalendar
+                hoverRange="week"
+                ranges={[]}
+                className="bg-white"
+              />
+
               <button className="flex items-center  bg-indigo-500 hover:bg-indigo-700 rounded-lg px-3 py-2 ">
                 <Plus className="h-5 text-indigo-400" />
                 <p className="text-white ml-1 font-medium">Add View</p>

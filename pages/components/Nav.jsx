@@ -7,19 +7,26 @@ import {
   ChevronDown,
 } from "lucide-react";
 import AcmeList from "./AcmeList";
+import Sidebar from "./Sidebar";
 
 function Nav() {
   const [showList, setShowList] = useState(false);
   const handleClick = () => {
     setShowList(!showList);
   };
+  const [showSidebar, setShowSidebar] = useState(false);
+  const handleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
 
   return (
-    <header className=" flex items-center justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
+    <header className=" flex items-center fixed w-full  top-0 justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
       {/* .........here is the MENU BAR  and its list component.... */}
       <div>
-        <Menu className="h-5 w-7 lg:hidden" />
-        {/* {menuList && <MenuList />} */}
+        <Menu
+          className="icon cursor-pointer md:hidden"
+          onClick={handleSidebar}
+        />
       </div>
       <div className="flex space-x-3 items-center">
         {/* <ThemeSwitcher /> */}
@@ -40,6 +47,7 @@ function Nav() {
         </p>
         {showList && <AcmeList />}
       </div>
+      {/* {showSidebar && <Sidebar />} */}
     </header>
   );
 }
