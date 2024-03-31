@@ -71,3 +71,6 @@
 .boxheading {
   @apply text-black font-semibold;
 }
+.iconbox {
+  @apply h-7 w-7 p-1 rounded-md bg-white border hover:border-slate-300;
+}

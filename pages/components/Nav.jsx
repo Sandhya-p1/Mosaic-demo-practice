@@ -20,7 +20,7 @@ function Nav() {
   };
 
   return (
-    <header className=" flex items-center fixed w-full  top-0 justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
+    <header className=" flex items-center  w-full   justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
       {/* .........here is the MENU BAR  and its list component.... */}
       <div>
         <Menu
