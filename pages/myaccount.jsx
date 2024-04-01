@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
 import {
@@ -10,7 +10,13 @@ import {
   User,
 } from "lucide-react";
 import ToggleSwitcher from "./components/ToggleSwitcher";
+import Link from "next/link";
+
 function myaccount() {
+  // const [open, setOpen] = useState();
+  // const handleOpen = () => {
+  //   setOpen(!open);
+
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
@@ -27,26 +33,39 @@ function myaccount() {
                   business settings
                 </h2>
                 <div className="flex gap-x-3  font-medium text-nowrap items-center md:inline md:space-y-4">
-                  <p className="text-indigo-400 w-3/4  cursor-pointer iconflex bg-indigo-100 rounded-md p-2">
-                    <User className="h-4 w-4" />
-                    My Account
-                  </p>
-                  <p className="iconflex cursor-pointer">
-                    <Power className="icon" />
-                    My Notifications
-                  </p>
-                  <p className="iconflex cursor-pointer">
-                    <Cable className="icon" />
-                    Connected Apps
-                  </p>
-                  <p className="iconflex cursor-pointer">
-                    <List className="icon" />
-                    Plans
-                  </p>
-                  <p className="iconflex cursor-pointer">
-                    <File className="icon" />
-                    Billing & Invoices
-                  </p>
+                  <Link href="/myaccount">
+                    <p className="text-indigo-400 w-3/4  cursor-pointer iconflex bg-indigo-100 rounded-md p-2">
+                      <User className="h-4 w-4" />
+                      My Account
+                    </p>
+                  </Link>
+                  <Link
+                    // className={`${path === "/mynotifications" ? "active" : ""}`}
+                    href="/mynotifications"
+                  >
+                    <p className="iconflex cursor-pointer ">
+                      <Power className="icon" />
+                      My Notifications
+                    </p>
+                  </Link>
+                  <Link href="/connectedapps">
+                    <p className="iconflex cursor-pointer">
+                      <Cable className="icon" />
+                      Connected Apps
+                    </p>
+                  </Link>
+                  <Link href="/plans">
+                    <p className="iconflex cursor-pointer">
+                      <List className="icon" />
+                      Plans
+                    </p>
+                  </Link>
+                  <Link href="/billing&invoices">
+                    <p className="iconflex cursor-pointer">
+                      <File className="icon" />
+                      Billing & Invoices
+                    </p>
+                  </Link>
                 </div>
               </div>
               {/* experience */}
