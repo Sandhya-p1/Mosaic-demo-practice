@@ -10,7 +10,7 @@ import {
   User,
 } from "lucide-react";
 import ToggleSwitcher from "./components/ToggleSwitcher";
-function myaccount() {
+function mynotifications() {
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
@@ -156,4 +156,4 @@ function myaccount() {
   );
 }
 
-export default myaccount;
+export default mynotifications;
