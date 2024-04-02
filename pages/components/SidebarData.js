@@ -277,7 +277,7 @@ export const Menus = [
       },
       {
         title: "404",
-        path: "/404",
+        path: "/empty",
       },
       {
         title: "Knowledge Base",
