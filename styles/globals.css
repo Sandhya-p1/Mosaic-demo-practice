@@ -45,7 +45,10 @@
   @apply h-4 w-4 text-slate-400;
 }
 .btn {
-  @apply px-3 py-2 rounded-md text-center border border-gray-200 bg-white font-medium;
+  @apply px-3 py-2 rounded-md text-center border hover:border-slate-300 cursor-pointer border-gray-200 bg-white font-medium;
+}
+.btnform {
+  @apply px-3 py-2 rounded-md  border hover:border-slate-300  border-gray-200 bg-white;
 }
 
 .optionmenu {
