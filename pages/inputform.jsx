@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
 import { AlertCircle } from "lucide-react";
 import ToggleSwitcher from "./components/ToggleSwitcher";
+
 function inputForm() {
+  const [toggleOn, setToggleOn] = useState(false);
+  const handleToggle = () => {
+    setToggleOn(!toggleOn);
+  };
   return (
     <main className="flex h-screen">
       <Sidebar />
@@ -159,9 +164,36 @@ function inputForm() {
             </div>
           </div>
           <h1 className="text-2xl font-semibold pt-3">Toggle Switch</h1>
-          <div className="flex items-center gap-x-4">
+          <div className="flex items-center gap-x-5">
+            {/* Toggle On */}
+            <div className="flex gap-x-1 items-center">
+              <div
+                className={`flex w-12 h-6 rounded-full  cursor-pointer transition-all duration-500 ${
+                  toggleOn ? "bg-slate-400" : "bg-indigo-600"
+                }`}
+                onClick={handleToggle}
+              >
+                <span
+                  className={`h-6 w-6 rounded-full bg-white z-50  transition-all ease-linear duration-150 ${
+                    toggleOn ? "ml-[1px]" : "ml-6"
+                  }`}
+                  onClick={handleToggle}
+                />
+              </div>
+              {toggleOn ? (
+                <h1 className="text-sm italic text-slate-400">Off</h1>
+              ) : (
+                <h1 className="text-sm italic text-slate-400">ON</h1>
+              )}
+            </div>
             <ToggleSwitcher />
-            <div></div>
+            {/* Toggle disable */}
+            <div className="flex gap-x-1 items-center cursor-not-allowed">
+              <div className="h-6 w-12 bg-slate-100 rounded-full border border-slate-300 ">
+                <span className="h-[22px] w-[22px]  mt-[1px] flex rounded-full bg-slate-300" />
+              </div>
+              <h1 className="text-slate-300">Disabled</h1>
+            </div>
           </div>
         </div>
       </div>

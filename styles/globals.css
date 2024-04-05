@@ -80,3 +80,6 @@
 .calendarbtn {
   @apply p-1 flex items-center bg-white border shadow-sm rounded-md size-fit space-x-2;
 }
+.bluebtn {
+  @apply px-3 py-2 text-nowrap rounded-md shadow-sm bg-indigo-500 hover:bg-indigo-600 text-white font-medium;
+}

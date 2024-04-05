@@ -354,7 +354,7 @@ export const Menus = [
       },
       {
         title: "Alert & Banner",
-        path: "/alert&banner",
+        path: "/alertbanner",
       },
       {
         title: "Modal",
