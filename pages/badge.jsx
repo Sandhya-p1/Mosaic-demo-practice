@@ -9,7 +9,7 @@ function badge() {
       <div className="w-full overflow-auto  ">
         <Nav />
         <div className="px-4 py-7 flex flex-col gap-y-6">
-          <h1 className="text-3xl font-bold"> Breadcrumb ✨ </h1>
+          <h1 className="text-3xl font-bold"> Badge ✨ </h1>
           <hr />
           {/* small */}
           <h1 className="text-2xl font-bold">Basic Small</h1>

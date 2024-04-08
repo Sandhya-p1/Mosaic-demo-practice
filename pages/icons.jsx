@@ -28,7 +28,9 @@ function icons() {
             </p>
             <div className="flex items-center justify-center gap-x-2">
               <button className="p-2 rounded-md text-white font-medium hover:bg-indigo-600 bg-indigo-500">
-                Buy Nucleo
+                <a href="https://nucleoapp.com/pricing" target="_blank">
+                  Buy Nucleo
+                </a>
               </button>
               <button className="p-2 rounded-md text-white font-medium hover:bg-slate-400 bg-slate-500">
                 Download Free Pack
@@ -48,7 +50,9 @@ function icons() {
             </p>
 
             <button className="p-2 rounded-md text-white font-medium hover:bg-indigo-500 bg-indigo-600">
-              Download Tabler Icons
+              <a href="https://tablericons.com/" target="_blank">
+                Download Tabler Icons
+              </a>
             </button>
           </div>
         </div>

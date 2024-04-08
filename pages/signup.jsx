@@ -1,7 +1,5 @@
-import { Check } from "lucide-react";
 import React from "react";
 import Link from "next/link";
-import { Checkbox } from "rsuite";
 
 function signup() {
   return (
@@ -64,14 +62,14 @@ function signup() {
               Email me about product news.
             </h1>
             <button className="px-3 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-md text-white font-medium ">
-              Sign Up
+              <Link href="./signin"> Sign Up</Link>
             </button>
           </div>
           <hr />
           <p className="text-slate-600">
             Have an account?
             <span className="text-indgio-500  text-indigo-500 cursor-pointer">
-              Sign In
+              <link href="signin"> Sign In</link>
             </span>
           </p>
         </form>

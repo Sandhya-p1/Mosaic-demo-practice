@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.9",
     "@wojtekmaj/react-daterange-picker": "^5.5.0",
     "lucide-react": "^0.365.0",
     "lucide-solid": "^0.319.0",

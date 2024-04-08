@@ -13,9 +13,9 @@ function accordion() {
       <div className="w-full overflow-auto  ">
         <Nav />
         <div className="px-6 py-8 flex flex-col gap-y-7">
-          <h1 className="text-3xl font-bold"> ToolTip ✨ </h1>
+          <h1 className="text-3xl font-bold"> Accordion ✨ </h1>
           <hr />
-          <h1 className="text-2xl font-bold"> ToolTip Types </h1>
+          <h1 className="text-2xl font-bold"> Accordion Types </h1>
           {/* First box */}
           <div className="border rounded-md border-slate-200  p-5">
             <div className="flex items-center justify-between">

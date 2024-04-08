@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
+import Link from "next/link";
 
 function empty() {
   return (
@@ -17,7 +18,7 @@ function empty() {
             Hmm...this page doesn't exist. Try searching for something else!
           </p>
           <button className="bg-indigo-500 mt-5 hover:bg-indigo-600 text-white rounded-md px-3 py-2 text-lg font-medium">
-            Back To Dashboard
+            <Link href="./main"> Back To Dashboard</Link>
           </button>
         </div>
       </div>

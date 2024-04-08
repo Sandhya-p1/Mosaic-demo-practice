@@ -36,14 +36,14 @@ function signin() {
               Forgot Password?
             </h1>
             <button className="px-3 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-md text-white font-medium ">
-              Sign In
+              <Link href="./main"> Sign In</Link>
             </button>
           </div>
           <hr />
           <p className="text-slate-600">
             Don’t you have an account?
             <span className="text-indgio-500  text-indigo-500 cursor-pointer">
-              Sign Up
+              <Link href="./signup"> Sign Up</Link>
             </span>
           </p>
           <p className="p-2 rounded-md text-amber-700 bg-amber-100  leading-tight flex gap-x-1">
