@@ -9,9 +9,9 @@ function cart2() {
       <Sidebar />
       <div className="w-full overflow-auto  ">
         <Nav />
-        <div className="lg:flex lg:gap-x-16 h-full flex-grow ">
+        <div className="lg:flex lg:gap-x-16 overflow-auto   ">
           {/* -------------left side---------------- */}
-          <div className=" px-4 py-9 lg:px-12 space-y-3 overflow-auto  lg:w-[65%]  no-scrollbar  text-gray-500">
+          <div className="  px-4 py-9 lg:pl-44 lg:w-[65%]  h-full  space-y-3    overflow-y-auto no-scrollbar  text-gray-500">
             <div className="flex space-x-2 text-base">
               <h1 className="text-indigo-500">Review</h1>
               <ArrowRight className="w-4" />
@@ -24,16 +24,16 @@ function cart2() {
             </h2>
             <div className="space-y-6">
               {/* ---------Complete Front-end Course--------- */}
-              <div className="lg:flex gap-x-4 space-y-4 lg:items-center">
+              <div className="lg:flex gap-x-4 gap-y-4 ">
                 <img
                   src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW4lMjB3b3JraW5nJTIwb24lMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
                   className=" lg:w-4/12 w-2/5  rounded-sm"
                 />
-                <div className="space-y-3 ">
-                  <h1 className="font-semibold text-xl text-black">
+                <div className="space-y-3  ">
+                  <h1 className="font-semibold text-2xl  text-black">
                     The Complete Front-End Development Course!
                   </h1>
-                  <p className="text-slate-500 text-base">
+                  <p className="text-slate-500 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut.
                   </p>
@@ -56,16 +56,16 @@ function cart2() {
               </div>
               <div className="border border-gray-200" />
               {/* --------web develoopment course------ */}
-              <div className="lg:flex gap-x-4 space-y-4 lg:items-center">
+              <div className="lg:flex gap-x-4 space-y-4 ">
                 <img
                   src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW4lMjB3b3JraW5nJTIwb24lMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
                   className=" lg:w-4/12 w-2/5  rounded-sm"
                 />
                 <div className="space-y-3 ">
-                  <h1 className="font-semibold text-xl text-black">
+                  <h1 className="font-semibold text-2xl text-black">
                     Web Development Ultimate Course 2021
                   </h1>
-                  <p className="text-slate-500 text-base">
+                  <p className="text-slate-500 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut.
                   </p>
@@ -88,16 +88,16 @@ function cart2() {
               </div>
               <div className="border border-gray-200" />
               {/* ---------Full-Stack Course--------- */}
-              <div className="lg:flex gap-x-4 space-y-4 lg:items-center">
+              <div className="lg:flex gap-x-4 space-y-4 ">
                 <img
                   src="https://images.unsplash.com/photo-1441015401724-70d16b783f5c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW4lMjB3b3JraW5nJTIwb24lMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"
                   className=" lg:w-4/12 w-2/5  rounded-sm"
                 />
                 <div className="space-y-3 ">
-                  <h1 className="font-semibold text-xl text-black">
-                    Full-Stack JavaScript Course!{" "}
+                  <h1 className="font-semibold text-2xl text-black">
+                    Full-Stack JavaScript Course!
                   </h1>
-                  <p className="text-slate-500 text-base">
+                  <p className="text-slate-500 ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut.
                   </p>
@@ -126,7 +126,7 @@ function cart2() {
           </div>
 
           {/* ----------right side---------------- */}
-          <div className="border-l shadow-md lg:w-[30%] w-full   space-y-5 overflow-auto no-scrollbar text-gray-500 bg-white p-7 mt-10 lg:mt-0">
+          <div className="border-l shadow-md lg:w-[30%] w-full mt-10 lg:mt-0  h-full    overflow-y-auto  space-y-5   text-gray-500 bg-white p-7 ">
             <h1 className="text-black font-bold text-3xl ">Reveiw & Pay</h1>
             <p className="font-medium text-xl text-black ">Order Summary</p>
             <div className="space-y-3">

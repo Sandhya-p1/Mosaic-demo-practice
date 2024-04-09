@@ -21,7 +21,7 @@ function profile() {
         <div className="md:flex h-full  ">
           {/* left side */}
           <div className="md:w-1/3  md:border border-gray-200 text-gray-800">
-            <div className="flex justify-between text-center px-6 py-4  ">
+            <div className="flex justify-between text-center px-6 py-4   ">
               <div className="flex space-x-3">
                 <img
                   src="https://toppng.com/uploads/preview/blue-right-arrow-icon-blue-arrow-png-ico-11562953197kqrddqm8rv.png"
@@ -33,7 +33,7 @@ function profile() {
             </div>
             <div className="border w-full border-slate-200" />
             <div className="px-5  py-4">
-              <div className="flex space-x-1 items-center shadow-sm font-medium px-3 py-2 text-slate-400 bg-white border rounded-md w-full">
+              <div className="flex space-x-1 items-center shadow-sm font-medium px-3 text-slate-400 bg-white border rounded-md w-full">
                 <Search className="h-4 w-5 font-bold" />
                 <input
                   type="search"

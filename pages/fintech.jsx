@@ -16,7 +16,7 @@ function fintech() {
             </h1>
             <div className="flex space-x-2 items-center">
               <h1>Date</h1>
-              <button className="flex py-2 px-3 bg-blue-600 text-white rounded-md font-semibold cursor-pointer hover:bg-blue-700 hovereffect items-center gap-x-1">
+              <button className="flex py-2 px-3 bg-blue-600 text-white rounded-md font-semibold cursor-pointer hover:bg-blue-700  items-center gap-x-1">
                 <Plus className="h-6 text-gray-300" />
                 Add Account
               </button>

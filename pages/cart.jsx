@@ -10,7 +10,7 @@ function cart() {
       <div className="w-full overflow-auto  ">
         <Nav />
 
-        <div className="lg:flex px-4 py-9 lg:px-12 gap-x-24 space-y-4 text-gray-500">
+        <div className="lg:flex px-4 py-9 lg:px-44 gap-x-24 space-y-4 text-gray-500">
           {/* -------------left side---------------- */}
           <div className="space-y-3 lg:w-2/3">
             <div className="flex space-x-2 text-base">

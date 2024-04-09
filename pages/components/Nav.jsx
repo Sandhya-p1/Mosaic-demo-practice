@@ -7,7 +7,6 @@ import {
   ChevronDown,
 } from "lucide-react";
 import AcmeList from "./AcmeList";
-import Sidebar from "./Sidebar";
 
 function Nav() {
   const [showList, setShowList] = useState(false);
@@ -20,7 +19,7 @@ function Nav() {
   };
 
   return (
-    <header className=" flex items-center  w-full   justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
+    <header className=" sticky top-0 z-50 flex items-center  w-full   justify-between text-gray-500 bg-white border border-slate-200 px-4 py-5">
       {/* .........here is the MENU BAR  and its list component.... */}
       <div>
         <Menu

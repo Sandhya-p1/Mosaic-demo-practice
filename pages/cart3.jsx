@@ -10,7 +10,7 @@ function cart3() {
         <Nav />
         <div className="lg:flex lg:gap-x-16 h-full flex-grow ">
           {/* -------------left side---------------- */}
-          <div className=" px-4 py-9 lg:px-16 space-y-3 overflow-auto  lg:w-[65%]  no-scrollbar  text-gray-600">
+          <div className=" px-6 py-9 lg:pl-40 space-y-3 overflow-auto  lg:w-[65%]  no-scrollbar  text-gray-600">
             <div className="flex space-x-2 text-base">
               <h1>Review</h1>
               <ArrowRight className="w-4" />
@@ -18,56 +18,58 @@ function cart3() {
               <ArrowRight className="w-4" />
               <h1 className="text-indigo-500">Confirm</h1>
             </div>
-            <h2 className="font-bold text-3xl text-gray-800 ">
+            <h2 className="font-bold text-4xl text-gray-800 ">
               Thank you for your order ✨
             </h2>
-            <p className="text-lg">
+            <p className="text-xl">
               You will soon receive a confirmation email with details of your
               order and a link to download the files.
             </p>
             <h2 className="font-semibold text-lg text-black py-2">
               Billing Information
             </h2>
-            <div className="space-y-1">
-              <h1>Name</h1>
-              <input type="text" placeholder="Sandhya" className="inputbox" />
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+              <div className="space-y-1">
+                <h1>Name</h1>
+                <input type="text" placeholder="Sandhya" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1>Surname</h1>
+                <input type="text" placeholder="Pandey" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1>Address</h1>
+                <input type="text" placeholder="" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1>Town/City</h1>
+                <input type="text" placeholder="" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1>State/Country</h1>
+                <input type="text" placeholder="Sandhya" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1 className="text-gray-800 flex gap-x-1">
+                  Country <Star className="text-red-500 fill-red-500 w-2" />
+                </h1>
+                <select className="bg-white text-black p-2 pr-4 w-full rounded-md border border-gray-200 outline-none hover:border-slate-300">
+                  <option selected>Italy</option>
+                  <option>USA</option>
+                  <option>United Kingdom</option>
+                </select>
+              </div>
+              <div className="space-y-1">
+                <h1>Postcode</h1>
+                <input type="text" placeholder="" className="inputbox" />
+              </div>
+              <div className="space-y-1">
+                <h1>VAT ID</h1>
+                <input type="text" placeholder="Sandhya" className="inputbox" />
+              </div>
             </div>
-            <div className="space-y-1">
-              <h1>Surname</h1>
-              <input type="text" placeholder="Pandey" className="inputbox" />
-            </div>
-            <div className="space-y-1">
-              <h1>Address</h1>
-              <input type="text" placeholder="" className="inputbox" />
-            </div>
-            <div className="space-y-1">
-              <h1>Town/City</h1>
-              <input type="text" placeholder="" className="inputbox" />
-            </div>
-            <div className="space-y-1">
-              <h1>State/Country</h1>
-              <input type="text" placeholder="Sandhya" className="inputbox" />
-            </div>
-            <div className="space-y-1">
-              <h1 className="text-gray-800 flex gap-x-1">
-                Country <Star className="text-red-500 fill-red-500 w-2" />
-              </h1>
-              <select className="bg-white text-black p-2 pr-4 w-full rounded-md border border-gray-200 outline-none hover:border-slate-300">
-                <option selected>Italy</option>
-                <option>USA</option>
-                <option>United Kingdom</option>
-              </select>
-            </div>
-            <div className="space-y-1">
-              <h1>Postcode</h1>
-              <input type="text" placeholder="" className="inputbox" />
-            </div>
-            <div className="space-y-1">
-              <h1>VAT ID</h1>
-              <input type="text" placeholder="Sandhya" className="inputbox" />
-            </div>
-            <div className="text-end">
-              <button className="p-2 bg-white shadow-md rounded-md text-indigo-500 font-medium">
+            <div className="text-end py-4">
+              <button className="p-3 bg-white shadow-md rounded-md text-indigo-500 font-medium">
                 Download invoice
               </button>
             </div>
@@ -160,7 +162,7 @@ function cart3() {
               </h1>
               <p className="italic">Expires 12/23</p>
             </div>
-            <button className="text-white bg-indigo-500 hover:bg-indigo-600 font-medium rounded-md p-2 w-full">
+            <button className="text-white bg-indigo-500 hover:bg-indigo-600 font-medium rounded-md p-3 text-lg w-full">
               View Your Order
             </button>
             <p className="text-sm italic text-center px-4 text-gray-500">

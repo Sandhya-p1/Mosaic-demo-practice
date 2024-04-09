@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "./components/Sidebar";
 import Nav from "./components/Nav";
 import { Stars, Star, Heart } from "lucide-react";
+import { Checkbox } from "@material-tailwind/react";
 function shop2() {
   return (
     <main className="flex h-screen bg-gray-100">
@@ -15,8 +16,84 @@ function shop2() {
           </h1>
           <div className="py-7  xl:flex space-y-6 xl:gap-x-4 ">
             {/* ------------leftside---------------- */}
-            <div className="shadow-lg p-3 space-y-2">
-              <h1 className="text-base">Discover</h1>
+            <div className="shadow-lg p-5 my-6 space-y-4 h-fit  w-full bg-white  ">
+              <h1 className=" text-lg font-medium">Discover</h1>
+              <ul className="cursor-pointer text-base space-y-2  text-slate-500 font-medium">
+                <li className=" text-indigo-600 ">View All</li>
+                <li>Apps / Software</li>
+                <li>Design / Tech Products</li>
+                <li>Books & Writing</li>
+                <li>Education</li>
+                <li>Drawing / Painting</li>
+              </ul>
+              <div>
+                <h1 className=" text-lg font-medium py-1">Price Range</h1>
+                <select className="w-full border  border-slate-300 cursor-pointer rounded-sm">
+                  <option selected>Less than $20</option>
+                  <option> $20 - $40</option>
+                  <option> $40 - $80</option>
+                  <option> More than $80</option>
+                </select>
+              </div>
+              <div>
+                <h1 className=" text-lg font-medium">Multi Select</h1>
+                <div className="space-y-2">
+                  <h1 className="iconflex">
+                    <Checkbox checked />
+                    Apps / Software
+                  </h1>
+                  <h1 className="iconflex">
+                    <Checkbox />
+                    Education
+                  </h1>
+                  <h1 className="iconflex">
+                    <Checkbox />
+                    Books & Writing
+                  </h1>
+                  <h1 className="iconflex">
+                    <Checkbox />
+                    Drawing / Painting
+                  </h1>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <h1 className=" text-lg font-medium py-2">Sort By Rating</h1>
+                <div className="iconflex">
+                  <Star className="starorange" />
+                  <Star className="starorange" />
+                  <Star className="starorange" />
+
+                  <Star className="starorange" />
+                  <Star className="stargray" />
+                  <p className="italic px-2 text-slate-400">And up</p>
+                </div>
+                <div className="iconflex">
+                  <Star className="starorange" />
+                  <Star className="starorange" />
+                  <Star className="starorange" />
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+                  <p className="italic px-2 text-slate-400">And up</p>
+                </div>
+                <div className="iconflex">
+                  <Star className="starorange" />
+                  <Star className="starorange" />
+
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+                  <p className="italic px-2 text-slate-400">And up</p>
+                </div>
+                <div className="iconflex">
+                  <Star className="starorange" />
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+                  <Star className="stargray" />
+
+                  <p className="italic px-2 text-slate-400">And up</p>
+                </div>
+              </div>
             </div>
             {/* ------------rightside---------------- */}
             <div className=" gap-4">
@@ -39,10 +116,10 @@ function shop2() {
                 </h1>
               </div>
               <h1 className="text-gray-500 italic pt-4 pb-3">67.975 Items</h1>
-              <div className="grid lg:grid-cols-3 gap-x-4 gap-y-4 grid-cols-1  overflow-x-hidden ">
+              <div className="grid lg:grid-cols-3 gap-4  grid-cols-1 ">
                 {/* ----------all the boxes according to grid------ */}
                 {/* ----box1------------ */}
-                <box1 className="box bg-white relative">
+                <div className="box  bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -71,9 +148,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box1>
+                </div>
                 {/* -----------box2--------------- */}
-                <box2 className="box bg-white relative">
+                <div className="box col-span-1 bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -103,9 +180,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box2>
+                </div>
                 {/* ---------------box3----------------- */}
-                <box3 className="box bg-white relative">
+                <div className="box  bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -134,9 +211,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box3>
+                </div>
                 {/* -------------box4--------------- */}
-                <box4 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -166,9 +243,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box4>
+                </div>
                 {/* ---------box5-------------- */}
-                <box5 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -198,9 +275,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box5>
+                </div>
                 {/* --------------box6-------------------- */}
-                <box6 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -229,9 +306,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box6>
+                </div>
                 {/* ----------box7------ */}
-                <box7 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -261,9 +338,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box7>
+                </div>
                 {/* -------------------------box8------------- */}
-                <box8 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -293,9 +370,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box8>
+                </div>
                 {/* ---------box9----------- */}
-                <box9 className="box bg-white relative">
+                <div className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -325,25 +402,25 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box9>
+                </div>
                 {/* ---box10---------- */}
-                <box10 className="col-span-3 bg-slate-800 space-y-2 p-7 flex flex-col items-center justify-center text-white xl:flex-row xl:justify-between">
-                  <div className="gap-y-2 text-center">
-                    <h1 className="font-semibold">
+                <bdiv className="col-span-3 bg-slate-800 space-y-3 p-9 flex flex-col items-center justify-center text-white xl:flex-row xl:justify-between">
+                  <div className="gap-y-3 text-center lg:text-start ">
+                    <h1 className="font-semibold text-3xl">
                       Excepteur sint occaecat
                       <span className="text-blue-500"> cupidatat </span> 🎁
                     </h1>
-                    <p className="text-base text-slate-600">
+                    <p className="text-xl text-slate-600">
                       Excepteur sint occaecat cupidatat non proidentsunt in
                       culpa qui officia deserunt mollit!
                     </p>
                   </div>
-                  <button className="bg-blue-500 p-2 rounded-md font-semibold text-white">
+                  <button className="bg-blue-500 p-2 text-lg rounded-md font-semibold text-white">
                     Reedem Now!
                   </button>
-                </box10>
+                </bdiv>
                 {/* ------------box11-------------- */}
-                <box11 className="box bg-white relative">
+                <bdiv className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -373,9 +450,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box11>
+                </bdiv>
                 {/* ---------box12----------- */}
-                <box12 className="box bg-white relative">
+                <bdiv className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -404,9 +481,9 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box12>
+                </bdiv>
                 {/* ----------box13---------- */}
-                <box13 className="box bg-white relative">
+                <bdiv className="box bg-white relative">
                   <img src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg" />
                   <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
                     <Heart
@@ -435,7 +512,7 @@ function shop2() {
                       </h2>
                     </div>
                   </div>
-                </box13>
+                </bdiv>
               </div>
             </div>
           </div>

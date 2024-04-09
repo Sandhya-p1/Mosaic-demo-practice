@@ -6,12 +6,12 @@ import { ArrowLeft, Dot, Star } from "lucide-react";
 
 function singleproduct() {
   return (
-    <main className="flex h-screen bg-gray-100">
+    <main className="flex h-screen bg-slate-100">
       <Sidebar />
       <div className="w-full overflow-auto  ">
         <Nav />
 
-        <div className="lg:flex px-4 py-9 lg:px-12 gap-x-24 space-y-4">
+        <div className="lg:flex px-4 py-9  md:px-48 gap-x-24 space-y-4 scroll-smooth">
           {/* --------left side ---------------------------- */}
           <div className=" space-y-3 lg:w-2/3 ">
             <h1 className="text-blue-500 flex items-center pr-1">

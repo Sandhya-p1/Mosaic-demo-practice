@@ -49,16 +49,16 @@ function userstiles() {
           <div className="lg:flex items-center lg:justify-between  space-y-5">
             <h1 className="text-black font-bold text-3xl">Acme Inc. ✨</h1>
             <div className="flex gap-x-2">
-              <div className="px-2 py-1 flex items-center gap-x-2 bg-white rounded-sm border border-gray-200 shadow-md ">
+              <div className="px-2  flex items-center gap-x-2 bg-white rounded-sm border border-gray-200 shadow-md ">
                 <Search className="h-4 w-5 text-gray-400" />
                 <input
                   type="search"
                   placeholder="Search..."
-                  className="bg-white outline-none
+                  className="bg-white outline-none border-none
                 "
                 />
               </div>
-              <button className="bg-indigo-500 font-medium text-white flex gap-x-1 p-2 rounded-sm hover:bg-indigo-600">
+              <button className="bg-indigo-500 font-medium text-white iconflex  p-2 rounded-md hover:bg-indigo-600">
                 <Plus className="h-6 text-indigo-300" /> Add Member
               </button>
             </div>

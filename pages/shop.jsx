@@ -21,19 +21,19 @@ function shop() {
       <Sidebar />
       <div className="w-full overflow-auto  ">
         <Nav />
-        <div className="px-6 py-8  text-black">
+        <div className="px-6 py-8  text-black relative z-0">
           <div className=" space-y-3 ">
             <h1 className="font-bold gap-x-1 text-black flex items-center text-2xl md:text-3xl">
               Find the right product for you
               <Stars className="fill-yellow-500 h-7 md:h-9" />
             </h1>
             {/* -------search box--------------- */}
-            <div className="text-gray-500 p-2 flex items-center rounded-md border border-gray-200 shadow-sm bg-white gap-x-1 w-full md:w-1/2">
-              <Search className="h-4 hover:text-gray-700" />
+            <div className="text-gray-500  flex items-center rounded-md border border-gray-200 shadow-sm bg-white  w-full md:w-1/2">
+              <Search className="h-4 w-4 ml-3 hover:text-gray-700" />
               <input
                 type="search"
                 placeholder="Search..."
-                className="text-gray-500 bg-white border-none w-full outline-none"
+                className="text-gray-500 bg-white border-none w-full outline-none focus:outline-none "
               />
             </div>
             {/* ----------list of headings-------------- */}
@@ -343,7 +343,7 @@ function shop() {
                     src="https://1721181113.rsc.cdn77.org/data/images/full/48743/enhanced-cybersecurity-using-random-number-generator-based-on-perovskite-led-offers-safer-exchange-of-digital-information.jpg"
                     className="w-full"
                   />
-                  <button className="absolute top-0 right-0 p-2 bg-black bg-opacity-45  rounded-full m-3">
+                  <button className="absolute top-0 right-0 p-2 bg-black   rounded-full m-3">
                     <Heart
                       className="h-4 w-4 
                          text-white"

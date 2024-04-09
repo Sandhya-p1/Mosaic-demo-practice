@@ -27,7 +27,7 @@
   display: none;
 }
 .starorange {
-  @apply h-5 w-5 fill-orange-400 text-orange-400 font-normal;
+  @apply h-5 w-5 fill-yellow-500 text-yellow-300 font-normal;
 }
 .stargray {
   @apply h-5 w-5 fill-gray-300 text-gray-300;
