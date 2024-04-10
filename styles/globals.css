@@ -33,7 +33,7 @@
   @apply h-5 w-5 fill-gray-300 text-gray-300;
 }
 .inputbox {
-  @apply p-2 border border-gray-200 bg-white shadow-sm hover:border-slate-300 outline-none rounded-md placeholder:text-gray-500 w-full;
+  @apply px-2 border border-gray-200 bg-white shadow-sm hover:border-slate-300 outline-none rounded-md placeholder:text-gray-500 w-full;
 }
 .profile-name {
   @apply flex space-x-2 items-center cursor-pointer p-3;

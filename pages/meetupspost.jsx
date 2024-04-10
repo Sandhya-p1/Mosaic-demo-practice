@@ -18,11 +18,11 @@ function meetupspost() {
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
-        <div className="md:flex gap-x-10   text-slate-600 px-3 py-5 md:px-24 md:py-10">
+        <div className="md:flex gap-x-10  overflow-y-auto  text-slate-600 px-3 py-5 md:px-24 md:py-10">
           {/* left side */}
-          <div className="space-y-4 md:w-[70%] overflow-y-scroll scroll-smooth no-scrollbar">
+          <div className="space-y-4 md:w-[70%] overflow-y-auto scroll-smooth no-scrollbar">
             <button
               className="bg-white py-1 mb-2 px-2  flex items-center shadow-sm border rounded-md text-sm font-medium hover:border-gray-300"
               onClick={handleClick}
@@ -201,7 +201,7 @@ function meetupspost() {
           </div>
 
           {/* right side */}
-          <div className="space-y-4 py-7 md:py-0 w-[30%]">
+          <div className="space-y-4 py-7 overflow-y-auto no-scrollbar md:py-0 w-[30%]">
             <div className=" p-3 border shadow-lg rounded-md space-y-2 bg-white">
               <button className="flex w-full items-center gap-x-1 justify-center py-2 text-base text-white bg-indigo-500 hover:bg-indigo-600 rounded-sm">
                 <Check className="h-5 w-4" />

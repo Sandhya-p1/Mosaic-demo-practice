@@ -16,9 +16,9 @@ function profile() {
   return (
     <main className="flex h-screen bg-gray-50">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
-        <div className="md:flex h-full  ">
+        <div className="md:flex h-full overflow-y-auto ">
           {/* left side */}
           <div className="md:w-1/3  md:border border-gray-200 text-gray-800">
             <div className="flex justify-between text-center px-6 py-4   ">
@@ -45,31 +45,52 @@ function profile() {
                 TEAM Members
               </h1>
               <div className="profile-name bg-indigo-200 rounded-md ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Carolyn McNeail</p>
               </div>
               <div className="profile-name ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Mary Roszczewski</p>
               </div>
               <div className="profile-name ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Jerzy Wierzy</p>
               </div>
               <div className="profile-name ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Tisha Yanchev</p>
               </div>
               <div className="profile-name ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Sandhya Pandey</p>
               </div>
               <div className="profile-name ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Nisha Bhandari</p>
               </div>
               <div className="profile-name  ">
-                <img src=" " />
+                <img
+                  src="https://annemariesegal.com/wp-content/uploads/2017/04/adobestock_86346713-cropped-young-woman-in-suit.jpg?w=1200 "
+                  className="profilebox"
+                />
                 <p>Ashmita Khatri</p>
               </div>
             </div>

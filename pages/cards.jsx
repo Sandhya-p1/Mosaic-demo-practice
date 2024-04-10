@@ -13,9 +13,9 @@ function cards() {
   return (
     <main className="flex h-screen bg-white ">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
-        <div className=" md:flex justify-between   gap-x-5">
+        <div className=" md:flex justify-between  overflow-y-auto  gap-x-5">
           {/* left side */}
           <div className="space-y-5 py-6 px-4 md:px-5  text-black col-span-2 md:w-2/3">
             <div className="md:flex md:justify-between space-y-3 items-center">
@@ -35,42 +35,72 @@ function cards() {
             </div>
             {/* box1 */}
             <div
-              className={` shadow-md border-2 bg-white p-4 md:grid md:grid-cols-2 w-full flex justify-between ${
-                clickBorder ? "border-blue-600" : "border-gray-1`00"
+              className={` shadow-md border-2 bg-white p-4 flex rounded-md  flex-wrap items-center justify-between ${
+                clickBorder ? "border-blue-600" : "border-gray-100"
               } `}
               onClick={handleClick}
             >
-              {/* first grid */}
-              <div className="col-span-1 md:flex space-y-1 md:justify-between md:items-center">
+              <div className="space-y-2">
                 <div className="flex gap-x-4 items-center text-base space-y-3">
                   <img
                     src="https://media.istockphoto.com/id/1351057681/vector/two-opposite-circles-difference.jpg?s=612x612&w=0&k=20&c=Ms3Wyy0YtZBkN1F5P_6sZoy8ljwktGNShboCF5XO3Kk="
-                    className="h-6 w-9 object-cover rounded-sm "
+                    className="h-10 w-9 object-cover rounded-sm "
                   />
                   <h1>
                     _Metal<p className="text-gray-600 text-xs">**7328</p>
                   </h1>
                 </div>
-                <h2>Dominik Lamakani</h2>
+                <h2 className="font-medium md:hidden">Dominik Lamakani</h2>
               </div>
-              {/* second grid */}
-              <div className="col-span-1 md:flex cursor-pointer space-y-1 md:justify-between md:items-center">
-                <h1>$780,00 / $20,000</h1>
 
-                <h2
-                  className="text-green-500 px-2 py-1 w-fit flex rounded-2xl bg-green-100
-                text-xs"
-                >
+              <h2 className="font-medium hidden md:inline">Dominik Lamakani</h2>
+
+              <div className="space-y-4 flex flex-col items-end">
+                <h1 className="text-slate-600">$780,00 / $20,000</h1>
+                <h2 className="text-green-400 md:hidden px-3 py-1 font-medium w-fit flex rounded-2xl bg-green-100 text-sm">
                   Active
                 </h2>
               </div>
+              <h2 className="text-green-500 hidden md:inline px-3 py-1 font-medium w-fit rounded-2xl bg-green-100 text-sm">
+                Active
+              </h2>
             </div>
 
             {/* box2 */}
-          </div>
+            <div
+              className={` shadow-md border-2 bg-white p-4 flex rounded-md  flex-wrap items-center justify-between ${
+                clickBorder ? "border-blue-600" : "border-gray-100"
+              } `}
+              onClick={handleClick}
+            >
+              <div className="space-y-2">
+                <div className="flex gap-x-4 items-center text-base space-y-3">
+                  <img
+                    src="https://media.istockphoto.com/id/1351057681/vector/two-opposite-circles-difference.jpg?s=612x612&w=0&k=20&c=Ms3Wyy0YtZBkN1F5P_6sZoy8ljwktGNShboCF5XO3Kk="
+                    className="h-10 w-9 object-cover rounded-sm "
+                  />
+                  <h1>
+                    _Virtual<p className="text-gray-600 text-xs">**7377</p>
+                  </h1>
+                </div>
+                <h2 className="font-medium md:hidden">Dominik Lamakani</h2>
+              </div>
 
+              <h2 className="font-medium hidden md:inline">Dominik Lamakani</h2>
+
+              <div className="space-y-4 flex flex-col items-end">
+                <h1 className="text-slate-600">$0 / $20,000</h1>
+                <h2 className="text-yellow-600 md:hidden px-3 py-1 font-medium w-fit flex rounded-2xl bg-yellow-100 text-sm">
+                  Blocked
+                </h2>
+              </div>
+              <h2 className="text-yellow-600 hidden md:inline px-3 py-1 font-medium w-fit rounded-2xl bg-yellow-100 text-sm">
+                Blocked
+              </h2>
+            </div>
+          </div>
           {/* right side */}
-          <div className="md:border-l border-t overflow-y-scroll scroll-smooth no-scrollbar space-y-6 border-gray-200 bg-gray-50  h-screen w-full md:w-[30%] py-9 md:px-7 px-20  text-slate-600">
+          <div className="md:border-l border-t overflow-y-auto  no-scrollbar space-y-6 border-gray-200 bg-gray-50   w-full md:w-[30%] py-9 md:px-7 px-20  text-slate-600">
             <h1 className="text-black font-medium text-center">
               Physical Metal Card Summary
             </h1>

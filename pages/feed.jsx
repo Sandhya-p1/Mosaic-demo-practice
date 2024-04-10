@@ -30,12 +30,12 @@ function feed() {
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
         {/* feed */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5 py-6 md:px-7 text-gray-700">
+        <div className="grid grid-cols-1 overflow-y-auto md:grid-cols-2 lg:grid-cols-4 px-5 py-6 md:px-7 text-gray-700">
           {/* left side part */}
-          <div className="space-y-6 ">
+          <div className="space-y-6 px-6 ">
             <h1 className="text-black  text-2xl font-bold md:text-3xl">
               Feed ✨
             </h1>
@@ -47,13 +47,14 @@ function feed() {
                 className="border-none outline-none bg-white w-full "
               />
             </div>
-            <div className="flex  md:inline-block md:space-y-3 overflow-x-scroll no-scrollbar scroll-smooth gap-x-4 ">
+            {/* left side */}
+            <div className="w-full  flex  md:flex-col md:space-y-3 overflow-x-scroll no-scrollbar scroll-smooth gap-x-4 ">
               <div>
-                <h1 className="uppercase text-xs text-slate-400 font-bold">
+                <h1 className="uppercase  text-xs pb-2 text-slate-400 font-bold">
                   Menu
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 md:gap-y-2 items-center py-2 md:inline-block">
-                  <h1 className="flex t items-center gap-x-2  font-medium p-2 text-indigo-500 rounded-md bg-white w-full ">
+                <div className="cursor-pointer w-full flex gap-x-3 md:space-y-3 items-center py-2 md:inline-block">
+                  <h1 className="flex t items-center gap-x-2  font-medium p-2 text-indigo-500 rounded-md bg-white w-[70%] ">
                     <Home className="h-4 w-4 text-indigo-500" />
                     Home
                   </h1>
@@ -77,10 +78,10 @@ function feed() {
                 </div>
               </div>
               <div>
-                <h1 className="uppercase text-xs text-slate-400 font-bold">
+                <h1 className="uppercase text-xs py-2 text-slate-400 font-bold">
                   Groups
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:gap-y-2 md:inline-block  ">
+                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:space-y-3 md:inline-block  ">
                   <h1 className="menulist">
                     <Waves className="icon" />
                     Productivity
@@ -94,7 +95,7 @@ function feed() {
             </div>
           </div>
           {/* MIDDLE PART */}
-          <div className="col-span-2 overflow-y-scroll no-scrollbar space-y-5">
+          <div className="col-span-2 overflow-y-auto  no-scrollbar space-y-5">
             {/* box1 */}
             <div className="box py-3 px-4 ">
               <div className="flex items-center gap-x-3">
@@ -392,7 +393,7 @@ function feed() {
             {/* middle part close here */}
           </div>
           {/* Right side part */}
-          <div className="pl-6 text-gray-800 space-y-4 text-sm">
+          <div className="pl-6 text-gray-800 overflow-y-auto no-scrollbar   space-y-4 text-sm">
             <div className="inputbox flex items-center gap-x-1  ">
               <Search className="text-slate-400 h-5 w-5" />
               <input

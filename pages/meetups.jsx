@@ -28,7 +28,7 @@ function meetups() {
               Discover Meetups ✨
             </h1>
             <div className="flex space-x-3 items-center">
-              <div className="p-2 border border-gray-200 bg-white shadow-sm hover:border-slate-300 outline-none rounded-md placeholder:text-gray-500 flex items-center space-x-1">
+              <div className="px-2 border border-gray-200 bg-white shadow-sm hover:border-slate-300 outline-none rounded-md placeholder:text-gray-500 flex items-center space-x-1">
                 <Search className="h-6 w-5 text-gray-400" />
                 <input
                   type="search"

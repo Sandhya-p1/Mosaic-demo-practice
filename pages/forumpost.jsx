@@ -24,10 +24,10 @@ function forumpost() {
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
-      <div className="w-full overflow-y-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
         {/* hero page */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5 py-6  md:px-7 h-full text-gray-600">
+        <div className="grid grid-cols-1 overflow-y-auto md:grid-cols-2 lg:grid-cols-4 px-5 py-6  md:px-7 h-full text-gray-600">
           {/* left side part */}
           <div className="space-y-6 ">
             <div className=" flex justify-between items-center ">
@@ -43,7 +43,7 @@ function forumpost() {
                 <h1 className="uppercase text-xs text-slate-400 font-bold">
                   Menu
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 md:gap-y-2 items-center py-2 md:inline-block">
+                <div className="cursor-pointer flex gap-x-3 md:space-y-3  items-center py-2 md:inline-block">
                   <h1 className="flex t items-center gap-x-2  font-medium p-2 text-indigo-500 rounded-md bg-white w-full ">
                     <Home className="h-4 w-4 text-indigo-500" />
                     Home
@@ -67,7 +67,7 @@ function forumpost() {
                 <h1 className="uppercase text-xs text-slate-400 font-bold">
                   Groups
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:gap-y-2 md:inline-block  ">
+                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:space-y-3 md:inline-block  ">
                   <h1 className="menulist">
                     <Circle className="h-4 w-4 text-green-600" />
                     Startups

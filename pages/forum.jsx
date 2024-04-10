@@ -24,10 +24,10 @@ function forum() {
   return (
     <main className="flex h-screen bg-slate-100">
       <Sidebar />
-      <div className="w-full overflow-auto ">
+      <div className="w-full overflow-hidden flex flex-col ">
         <Nav />
         {/* hero page */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-5 py-6 md:px-7 text-gray-700">
+        <div className="grid grid-cols-1 overflow-y-auto md:grid-cols-2 lg:grid-cols-4 px-5 py-6 md:pl-10 text-gray-700">
           {/* left side part */}
           <div className="space-y-6">
             <div className=" flex justify-between items-center ">
@@ -43,7 +43,7 @@ function forum() {
                 <h1 className="uppercase text-xs text-slate-400 font-bold">
                   Menu
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 md:gap-y-2 items-center py-2 md:inline-block">
+                <div className="cursor-pointer flex gap-x-3 md:space-y-3  items-center py-2 md:inline-block">
                   <h1 className="flex t items-center gap-x-2  font-medium p-2 text-indigo-500 rounded-md bg-white w-full ">
                     <Home className="h-4 w-4 text-indigo-500" />
                     Home
@@ -64,10 +64,10 @@ function forum() {
                 </div>
               </div>
               <div>
-                <h1 className="uppercase text-xs text-slate-400 font-bold">
+                <h1 className="uppercase text-xs py-2 text-slate-400 font-bold">
                   Groups
                 </h1>
-                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:gap-y-2 md:inline-block  ">
+                <div className="cursor-pointer flex gap-x-3 items-center py-2 md:space-y-3 md:inline-block  ">
                   <h1 className="menulist">
                     <Circle className="h-4 w-4 text-green-600" />
                     Startups
@@ -85,7 +85,7 @@ function forum() {
             </div>
           </div>
           {/* MIDDLE PART */}
-          <div className="col-span-2 overflow-y-scroll no-scrollbar space-y-5 mt-3 md:mt-0">
+          <div className="col-span-2 overflow-y-auto no-scrollbar space-y-5 mt-3  md:mt-0">
             {/* box1 */}
 
             <div className="box grid grid-cols-3 w-full items-center cursor-pointer font-medium text-lg text-center ">
@@ -376,7 +376,7 @@ function forum() {
             </div>
           </div>
           {/* right part */}
-          <div className="pl-6 space-y-5">
+          <div className="pl-4 w-full overflow-y-auto no-scrollbar space-y-5">
             <button className="py-2 text-center w-full bg-indigo-500 hover:bg-indigo-600 text-white text-base font-medium rounded-md">
               Create Post
             </button>
